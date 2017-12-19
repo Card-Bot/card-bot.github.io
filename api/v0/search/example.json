@@ -5,6 +5,7 @@
   "stats": {
     "moves": "2",
     "defense-value": "1",
-    "attack-value": "1"
+    "attack-value": "1",
+    "health": "5"
   }
 }
