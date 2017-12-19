@@ -1,4 +1,5 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   color: white;
   background: -moz-linear-gradient(45deg, rgba(44,47,51,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(44,47,51,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
