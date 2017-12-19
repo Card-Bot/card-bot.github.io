@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <title>CardBot for Discord</title>
+    <link rel="icon" type="image/png" href="assets/image.png">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <div class="top-bar">
+    <a href="api/tutorial.html">API</a>
+    <a href="rules.html">Rules</a>
+    <a href="about.html">About CardBot</a>
+  </div>
+  <div class="contents">
+    <h2>Rules of CardBot Battle</h2><br>
+    <p>CardBot battle is a turn-based card game, where to opponents with 1 card each take turns to build attack and defense, and destroy the opponent</p>
+    <br>
+    <p>First, two players start a battle with <b>c.battle</b> and <b>c.accept (CHALLENGER USERNAME)</b></p>
+    <p>Second, one player is randomely chosen to go first. It does not matter who goes first, because both players go before the attack phase begins</p>
+    <p>The player who goes gets a certain amount of turns, depending on the card. If they type <b>1</b, attack will increase the the incremental amount, also designated in the <a href="api/tutorial.html">Search API</a></p>
+    <p>Do not worry about the opponent seeing what you do, the bot deletes the message immediately</p>
+    <p>Third, the second player goes, doing the same thing</p>
+    <p>Last, the attack is subtracted from the opponents defense they had, and then dealt to them, and vice-versa.</p>
+    <p>This process repeats until 1 player's card dies</p>
+    <p>That is it!</p>
+  </div>
+</html>
