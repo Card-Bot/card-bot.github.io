@@ -42,5 +42,11 @@ a {
   
   display: inline;
   background: #303030;
-  border: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+.command:hover {
+  border-bottom: 3px solid white;
 }
