@@ -23,6 +23,10 @@ body {
   transition: color 0.5s;
 }
 
+a {
+  color: #7289da;
+}
+
 .top-bar a:hover {
   color: black;
 }
