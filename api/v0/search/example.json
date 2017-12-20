@@ -1,5 +1,5 @@
 ---
-permalink: api/v0/search?term=example
+permalink: api/v0/search/example/
 ---
 {
   "name": "example",
