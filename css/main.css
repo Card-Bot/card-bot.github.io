@@ -40,7 +40,7 @@ a {
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
   
-  width: auto;
+  width-min: 1px;
   display: block;
   clear: both;
   color: #555555;
