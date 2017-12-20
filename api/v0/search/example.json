@@ -1,7 +1,7 @@
 {
   "name": "example",
   "rarity": "common",
-  "image": "https://card-bot.github.io/api/v0/image/example.png",
+  "image": "https://card-bot.github.io/assets/set0/example.png",
   "stats": {
     "moves": "2",
     "defense-value": "1",
