@@ -39,4 +39,13 @@ a {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
+  
+  width: auto;
+  display: block;
+  clear: both;
+  color: #555555;
+  padding: 1em 1em;
+  margin: auto 40px auto 40px;
+  background: #f4f4f4;
+  border: solid 1px #e1e1e1
 }       
