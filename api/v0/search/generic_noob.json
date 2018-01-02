@@ -1,10 +1,4 @@
-{
-  "name": "Generic Noob",
-  "rarity": "common",
-  "image": "https://card-bot.github.io/assets/set0/noob.png",
-  "stats": {
-    "packs": ["Common", "Rare", "Set0", "Roblox"],
-    "tags": ["Roblox", "Noob", "Set0"],
-    "price": "10.00"
-  }
-}
+---
+---
+
+{{ site.data.generic_noob.yml | jsonify }}
