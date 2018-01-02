@@ -2,17 +2,4 @@
 permalink: api/findcard
 ---
 
-<script>
-  (function(){
-    var link = window.location.href
-    var args = link.split("?")[1]
-    
-    var s = args.split("&") || [].push(args);
-    
-    if(s[0].split("=")[0] === "term") {
-      var term = s[0].split("=")[1];
-      
-      window.location.href = "https://card-bot.github.io/api/v0/search/" + term + ".json"
-    }
-  })();
-</script>
+<h1>{{ site.posts[1].term }}</h1>
