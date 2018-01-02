@@ -2,6 +2,4 @@
 permalink: api/search
 ---
 
-{% for post in site.posts %}
-  <h1>{{ post.term }}</h1>
-{% endfor %}
+<h1>{{ site.posts[0].term }}</h1>
