@@ -2,3 +2,28 @@
 layout: home
 permalink: cards/
 ---
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <title>CardBot for Discord</title>
+    <link rel="icon" type="image/png" href="https://card-bot.github.io/assets/image.png">
+    <link rel="stylesheet" href="https://card-bot.github.io/css/main.css">
+  </head>
+  <div class="top-bar">
+    <a href="https://card-bot.github.io/api/tutorial">API</a>
+    <a href="https://card-bot.github.io/about">About CardBot</a>
+    <a href="https://card-bot.github.io/invite">Invite CardBot</a>
+    <a href="https://card-bot.github.io/cards">Cards</a>
+  </div>
+  <div class="content">
+    {% for entry in site.data %}
+      {% assign meetup = entry[1] %}
+        <h3><u>{{ meetup.name }}</u></h1>
+        <p>{{ meetup.description }}</p>
+        <p>Packs available: {{ meetup.packs | stringify }}</p>
+        <p>Price: {{ meetup.price }}</p>
+        <br />
+    {% endfor %}
+  </div>
+</html>
