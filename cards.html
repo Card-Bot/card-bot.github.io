@@ -22,7 +22,7 @@ permalink: cards/
         <h3><u>{{ meetup.name }}</u></h1>
         <img src={{ meetup.link }}>
         <p>{{ meetup.description }}</p>
-        <p>Packs available: {{ meetup.packs | join: ', ' }}</p>
+        <p>Packs available: <b>{{ meetup.packs | join: ', ' }}</b></p>
         <p>Price: {{ meetup.price }}</p>
         <br />
     {% endfor %}
