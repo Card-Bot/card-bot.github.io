@@ -1,0 +1,10 @@
+# _data/generic_noob.yml
+
+name: "Generic Noob"
+description: "Just a generic noob"
+stats: {
+  packs: ["Common Pack", "Rare Pack", "Set0 Pack", "Roblox Set Pack"]
+  tags: ["Roblox", "Noob", "Set0"]
+  price: "10.00"
+}
+link: "https://card-bot.github.io/assets/set0/noob.png
