@@ -1,4 +1,4 @@
 ---
 ---
 
-{{ site.data.generic_noob.yml | jsonify }}
+
