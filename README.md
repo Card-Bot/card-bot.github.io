@@ -10,3 +10,17 @@ CardBot is a fast, powerful, and fun trading card discord bot that adds some exc
 _Isn't this just a copy of Discord Cards?_<br>
 No! While Discord Cards does have many of the same features that CardBot has, CardBot is different for 1 very important reason:
 Battles are coming! After **Set 2** is released, Battling will be added to CardBot! Stay tuned for that!
+
+## All cards
+This is a list of all of the cards in CardBot!
+
+{% for entry in site.data %}
+  {% assign meetup = entry[1] %}
+  <h3>{{ meetup.name }}</h3>
+  <img src={{ meetup.link }}></img>
+  <p>{{ meetup.description }}</p>
+  <p>Packs: {{ meetup.stats.packs }}</p>
+  <p>Tags: {{ meetup.stats.tags }}</p>
+  <p>Price: {{ meetup.stats.price }}</p>
+  <br />
+{% endfor %}
