@@ -1,6 +1,6 @@
 ---
-        limit: 100
-        ---
+limit: 100
+---
 
         {% for post in site.posts limit: page.limit %}
             
