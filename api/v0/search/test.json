@@ -1,6 +1,6 @@
 ---
 limit: 100
-permalink: api/v\0/search/test
+permalink: api/search/test
 ---
 
         {% for post in site.posts limit: page.limit %}
