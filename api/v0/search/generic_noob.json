@@ -1,7 +1,7 @@
 ---
-version: v0
+set: 0
 title: generic_noob
-permalink: api/:version/cards/:title
+permalink: api/cards/:title
 ---
 
 {{ site.data.{{ page.title }} | jsonify }}
