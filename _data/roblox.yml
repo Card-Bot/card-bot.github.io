@@ -1,6 +1,7 @@
 # _data/generic_noob.yml
 
 name: Roblox
+id: 2
 description: Symbol for Roblox
 packs:
 - Common Pack
