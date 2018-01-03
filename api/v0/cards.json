@@ -1,0 +1,13 @@
+[{% for entry in site.data %}
+  {% assign data = entry[1] %}
+  {
+    name: {{data.name}},
+    description: {{data.description}},
+    stats: {
+      packs: {{data.pack}},
+      tags: {{data.tags}},
+      price: {{data.price}}
+    },
+    image: {{data.link}}
+  }
+{% endfor %}]
