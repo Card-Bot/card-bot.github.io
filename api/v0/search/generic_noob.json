@@ -1,5 +1,7 @@
 ---
-permalink: /api/cards/:title
+version: v0
+title: generic_noob
+permalink: api/:version/cards/:title
 ---
 
-{{ site.data.generic_noob | jsonify }}
+{{ site.data.{{ page.title }} | jsonify }}
