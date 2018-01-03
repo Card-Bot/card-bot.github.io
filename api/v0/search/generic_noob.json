@@ -1,5 +1,5 @@
 ---
-permalink: api/cards/{{ site.data.generic_noob.id }}
+permalink: api/cards/{{ (site.data.generic_noob | jsonify).id }}
 ---
 
 {{ site.data.generic_noob | jsonify }}
