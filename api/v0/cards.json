@@ -1,9 +1,11 @@
 ---
 ---
+{% assign ids = 'x' %}
 {"cards": [{% for entry in site.data %}
   {% assign data = entry[1] %}
    {
       "name": {{data.name}},
+      "id": {{ ids.size }}
       "description": {{data.description}},
       "stats": {
          "packs": {{data.packs}},
@@ -11,5 +13,6 @@
          "price": {{data.price}}
       },
       "image": {{data.link}}
-   }
-{% endfor %}]
+   },
+  {% assign ids = ids | append: 'x' %}
+{% endfor %}{}]
