@@ -1,6 +1,7 @@
 # _data/generic_noob.yml
 
 name: Generic Noob
+id: 1
 description: Just a generic noob
 packs:
 - Common Pack
