@@ -1,6 +1,6 @@
 ---
-version: v0
-permalink: api/:version/cards/all
+contains: all
+permalink: api/cards/all
 ---
 {% assign ids = 'x' %}
 {"cards": [{% for entry in site.data %}
