@@ -1,5 +1,4 @@
 ---
-permalink: api/cards
 ---
 {{ site.data |
    flatten_hash |
