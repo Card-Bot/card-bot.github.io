@@ -4,15 +4,15 @@
 {"cards": [{% for entry in site.data %}
   {% assign data = entry[1] %}
    {
-      "name": {{data.name}},
-      "id": {{ ids.size }}
-      "description": {{data.description}},
+      "name": "{{data.name}}",
+      "id": "{{ ids.size }}",
+      "description": "{{data.description}}",
       "stats": {
-         "packs": {{data.packs}},
-         "tags": {{data.tags}},
-         "price": {{data.price}}
+         "packs": "{{data.packs | join: ', '}}",
+         "tags": "{{data.tags | join: ', '}}",
+         "price": "{{data.price}}"
       },
-      "image": {{data.link}}
+      "image": "{{data.link}}"
    },
   {% assign ids = ids | append: 'x' %}
 {% endfor %}{}]
