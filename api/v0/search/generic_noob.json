@@ -1,5 +1,5 @@
 ---
-permalink: /api/:version/cards/generic_noob
+permalink: /api/cards/:title
 ---
 
 {{ site.data.generic_noob | jsonify }}
