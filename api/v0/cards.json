@@ -1,1 +1,5 @@
-{{site.data | jsonify}}
+{{ site.data |
+   flatten_hash |
+   filter_fields: 'name,description,tags,price,link' |
+   wrap_with_key: 'cards' |
+   jsonify }}
