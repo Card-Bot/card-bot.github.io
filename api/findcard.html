@@ -2,4 +2,11 @@
 permalink: api/search
 ---
 
-<h1>{{ site.posts[0].term }}</h1>
+<script>
+  var pr = []
+  for(var i in window.location.href.split("?")[1].split("&")) {
+    pr.push(i.split("="))
+  }
+  
+  window.alert(pr)
+</script>
