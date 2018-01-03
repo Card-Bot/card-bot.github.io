@@ -1,7 +1,15 @@
 ---
 ---
-{{ site.data |
-   flatten_hash |
-   filter_fields: 'name,description,tags,price,link' |
-   wrap_with_key: 'cards' |
-   jsonify }}
+{"cards": [{% for entry in site.data %}
+  {% assign data = entry[1] %}
+   {
+      "name": {{data.name}},
+      "description": {{data.description}},
+      "stats": {
+         "packs": {{data.packs}},
+         "tags": {{data.tags}},
+         "price": {{data.price}}
+      },
+      "image": {{data.link}}
+   }
+{% endfor %}]
