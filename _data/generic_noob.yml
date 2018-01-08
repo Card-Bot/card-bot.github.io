@@ -3,6 +3,7 @@
 name: Generic Noob
 uname: generic_noob
 id: 2
+set: 0
 description: Just a generic noob
 packs:
 - Common Pack
