@@ -1,5 +1,4 @@
 ---
-contains: all
 permalink: api/cards/all
 ---
 {% assign ids = 'x' %}
