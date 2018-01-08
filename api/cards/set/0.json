@@ -8,7 +8,7 @@
   "cards": [
     {% for card in site.data %}
       {% assign data = card[0] %}
-      {% if data.set == 0 %}
+      {% if {{data.set}} == 0 %}
         {{site.data.{{data.uname}} | jsonify}},
       {% endif %}
     {% endfor %}
