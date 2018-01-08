@@ -7,9 +7,6 @@ loop:
 {% for l in page.loop %}
   {% for card in site.data %}
     {% assign data = card[0] %}
-    
-    {% if {{ data.uname }} == {{ page.url | remove_slash | parse }} %}
-      <p>Hi!</p>
-    {% endif %}
+      <p>{{ page.url | remove_slash | parse }}</p>
   {% endfor %}
 {% endfor %}
