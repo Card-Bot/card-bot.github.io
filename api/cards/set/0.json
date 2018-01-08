@@ -1,0 +1,15 @@
+---
+---
+
+{
+  "author": "ZippyMagician",
+  "set-id": "0",
+  "description": "Roblox",
+  "cards": [
+    {% for card in site.data %}
+      {% assign data = card[0] %}
+      {{site.data.{{data.uname}} | jsonify}},
+    {% endfor %}
+  {}]
+}
+  
