@@ -1,9 +1,11 @@
+---
+---
 {% assign ids = 'x' %}
 {"cards": [{% for entry in site.data %}
   {% assign data = entry[1] %}
    {
       "name": "{{data.name}}",
-      "id": "{{ ids.size }}",
+      "id": "{{ data.id }}",
       "description": "{{data.description}}",
       "stats": {
          "packs": "{{data.packs | join: ', '}}",
