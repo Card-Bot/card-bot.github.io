@@ -1,11 +1,8 @@
+---
+permalink: /api/info
+---
 {
   "author": "Joshua Barnett",
   "license": "Apache 2.0",
-  "version": "v0",
-  "sets": {
-    "set0": {
-      "name": "The Bloxians",
-      "cards": "20"
-    }
-  }
+  "version": "v0"
 }
