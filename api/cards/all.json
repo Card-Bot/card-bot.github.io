@@ -1,6 +1,5 @@
 ---
 ---
-{% assign ids = 'x' %}
 {"cards": [{
   {% for set in site.sets %}
     {{ set[0] }}: [
@@ -21,6 +20,7 @@
          },
           {% endif %}
        {% endfor %}
-      {% assign ids = ids | append: 'x' %}
+      {}
   {% endfor %}
 {% endfor %}]
+}
