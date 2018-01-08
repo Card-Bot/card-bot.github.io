@@ -5,6 +5,17 @@ module Jekyll
     module ApiFilter
       # This will take multi-dimensional hash and \
       # convert it into a flattened array of hashes.
+      def remove_slash(input)
+        all_values = input.split("/").map(&:to_i)
+        flat = all_values[all_values.length - 1]
+        
+        return flat
+      end
+      def parse(input)
+        parse = input.split(".").map(&:to_i)
+        
+        return parse[0]
+      end
       def flatten_hash(input)
         all_values = input.to_a.flatten
         hash_values = all_values.select { |value| value.class == Hash }
