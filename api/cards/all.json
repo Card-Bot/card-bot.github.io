@@ -1,6 +1,3 @@
----
-permalink: /api/cards/all
----
 {% assign ids = 'x' %}
 {"cards": [{% for entry in site.data %}
   {% assign data = entry[1] %}
