@@ -1,11 +1,8 @@
 ---
 ---
 {"cards": [{
-  {% for set in site.sets %}
-    {{ set[0] }}: [
       {% for entry in site.data %}
       {% assign data = entry[1] %}
-        {% if "set{{ data.set }}" == set[0] %}
          {
             "name": "{{data.name}}",
             "id": "{{ data.id }}",
@@ -18,8 +15,4 @@
             "image": "{{data.link}}",
             "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
          },
-          {% endif %}
-      {}
-  {% endfor %}
-{% endfor %}]
-}
+{% endfor %}{}]}
