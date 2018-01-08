@@ -10,7 +10,8 @@
          "tags": "{{data.tags | join: ', '}}",
          "price": "{{data.price}}"
       },
-      "image": "{{data.link}}"
+      "image": "{{data.link}}",
+      "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
    },
   {% assign ids = ids | append: 'x' %}
 {% endfor %}{}]
