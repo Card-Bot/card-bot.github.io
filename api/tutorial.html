@@ -21,10 +21,10 @@ permalink: api/tutorial/
     <br>
     <br>
     <p>This is the API documentation for CardBot</p>
-    <p>The base for all GET requests is <span class="command">htttps://card-bot.github.io/api/{version}</span></p>
+    <p>The base for all GET requests is <span class="command">htttps://card-bot.github.io/api</span></p>
     <br>
     <h3>Searching</h3<br>
-    <p class="command">GET /api/v0/search/{term}.json</p>
+    <p class="command">GET /cards/{term}.json or /cards/all.json</p>
     <h3>Search parameters: </h3>
       <ul>
         <li>Space - _</li>
@@ -36,7 +36,10 @@ permalink: api/tutorial/
       </ul>
     <p>Sending a GET request will return the result, or "error" if nothing is found</p>
     <br>
-    <p class="command">GET /api/:info.json</p>
+    <p class="command">GET /:info.json</p>
     <p>Use this to get info, such as current version, author, license, etc</p>
+    <br>
+    <p class="command">GET /cards/set/{set}.json</p>
+    <p>Sending a GET request will return all the cards and data for the set. Organized by id (0, 1, etc)</p>
   </div>
 </html>
