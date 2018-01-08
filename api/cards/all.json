@@ -1,19 +1,26 @@
 ---
 ---
 {% assign ids = 'x' %}
-{"cards": [{% for entry in site.data %}
-  {% assign data = entry[1] %}
-   {
-      "name": "{{data.name}}",
-      "id": "{{ data.id }}",
-      "description": "{{data.description}}",
-      "stats": {
-         "packs": [{{data.packs | join: ', '}}],
-         "tags": [{{data.tags | join: ', '}}],
-         "price": "{{data.price}}"
-      },
-      "image": "{{data.link}}",
-      "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
-   },
-  {% assign ids = ids | append: 'x' %}
-{% endfor %}{}]
+{"cards": [{
+  {% for set in site.sets %}
+    {{ set[0] }}: [
+      {% for entry in site.data %}
+      {% assign data = entry[1] %}
+        {% if "set{{ data.set }}" == set[0] %}
+         {
+            "name": "{{data.name}}",
+            "id": "{{ data.id }}",
+            "description": "{{data.description}}",
+            "stats": {
+               "packs": [{{data.packs | join: ', '}}],
+               "tags": [{{data.tags | join: ', '}}],
+               "price": "{{data.price}}"
+            },
+            "image": "{{data.link}}",
+            "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
+         },
+          {% endif %}
+       {% endfor %}
+      {% assign ids = ids | append: 'x' %}
+  {% endfor %}
+{% endfor %}]
