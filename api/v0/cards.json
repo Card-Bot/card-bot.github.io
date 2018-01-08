@@ -1,5 +1,4 @@
 ---
-permalink: "api/cards/all/"
 ---
 {% assign ids = 'x' %}
 {"cards": [{% for entry in site.data %}
