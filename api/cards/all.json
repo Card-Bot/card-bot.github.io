@@ -19,7 +19,6 @@
             "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
          },
           {% endif %}
-       {% endfor %}
       {}
   {% endfor %}
 {% endfor %}]
