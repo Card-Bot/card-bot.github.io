@@ -1,7 +1,6 @@
 ---
 set: 0
 title: generic_noob
-permalink: api/cards/:title
 ---
 
-{{ site.data.{{ page.title }} | jsonify }}
+{{ site.data.generic_noob | jsonify }}
