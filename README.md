@@ -7,6 +7,4 @@ The Website for CardBot
 ## About CardBot
 CardBot is a fast, powerful, and fun trading card discord bot that adds some excitement to your discord server.
 
-_Isn't this just a copy of Discord Cards?_<br>
-No! While Discord Cards does have many of the same features that CardBot has, CardBot is different for 1 very important reason:
-Battles are coming! After **Set 2** is released, Battling will be added to CardBot! Stay tuned for that!
+_NOTE: CardBot is simply made for testing and for fun, and I admit some ideas were taken from Discord Cards. I ONLY MADE THIS FOR FUN, DONT GET MAD!!_
