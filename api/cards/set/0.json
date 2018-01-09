@@ -1,5 +1,4 @@
 ---
-set: 0
 ---
 
 {
@@ -9,7 +8,7 @@ set: 0
   "cards": [
     {% for card in site.data %}
       {% assign data = card[0] %}
-      {% if {{ data.set }} == {{ page.set }} %}
+      {% if {{data.set}} == 0 %}
         {
           "name": "{{data.name}}",
           "id": "{{ data.id }}",
