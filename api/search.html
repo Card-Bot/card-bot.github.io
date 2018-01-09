@@ -7,6 +7,6 @@ loop:
 {% for l in page.loop %}
   {% for card in site.data %}
     {% assign data = card[0] %}
-      <p>{{ page.url | remove_slash | parse }}</p>
+      <p>{{ page.url | remove_slash}}</p>
   {% endfor %}
 {% endfor %}
