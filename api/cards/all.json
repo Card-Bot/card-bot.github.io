@@ -3,16 +3,16 @@
 {"cards": [
   {% for entry in site.data %}
   {% assign data = entry[1] %}
-  {
-    "name": "{{data.name}}",
-    "id": "{{ data.id }}",
-    "description": "{{data.description}}",
-    "stats": {
-      "packs": [{{data.packs | join: ', '}}],
-      "tags": [{{data.tags | join: ', '}}],
-      "price": "{{data.price}}"
+    {
+      "name": "{{data.name}}",
+      "id": "{{ data.id }}",
+      "description": "{{data.description}}",
+      "stats": {
+        "packs": [{{data.packs | join: ', '}}],
+        "tags": [{{data.tags | join: ', '}}],
+        "price": "{{data.price}}"
+      },
+      "image": "{{data.link}}",
+      "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
     },
-    "image": "{{data.link}}",
-    "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
-  },
 {% endfor %}{}]}
