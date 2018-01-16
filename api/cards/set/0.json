@@ -12,8 +12,8 @@
       "id": "{{ data.id }}",
       "description": "{{data.description}}",
       "stats": {
-        "packs": [{{data.packs | join: ', '}}],
-        "tags": [{{data.tags | join: ', '}}],
+        "packs": ["{{data.packs | join: ', '}}"],
+        "tags": ["{{data.tags | join: ', '}}"],
         "price": "{{data.price}}"
       },
       "image": "{{data.link}}",
