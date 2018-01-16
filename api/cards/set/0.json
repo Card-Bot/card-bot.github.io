@@ -1,1 +1,24 @@
+---
+---
+
+{
+  "author": "ZippyMagician",
+  "set-id": "0",
+  "description": "Roblox",
+  "cards": [
+   {% for card in site.data %}{% assign data = card[1] %}{% if {{data.set}} == 0 %}
+    {
+      "name": "{{data.name}}",
+      "id": "{{ data.id }}",
+      "description": "{{data.description}}",
+      "stats": {
+        "packs": [{{data.packs | join: ', '}}],
+        "tags": [{{data.tags | join: ', '}}],
+        "price": "{{data.price}}"
+      },
+      "image": "{{data.link}}",
+      "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
+     },
+     {% endif %}{% endfor %}
+{}]}
 
