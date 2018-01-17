@@ -1,0 +1,10 @@
+---
+permalink: /redirect
+---
+<script>
+  var loc_url = window.location.href.split("?")[1].split("&")[0].split("=");
+  
+  if(loc_url[0] === "q") {
+    window.location.href = loc_url[1];
+  }
+</script>
