@@ -14,4 +14,4 @@
       "image": "{{data.link}}",
       "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
     },
-{% endfor %}{}}
+{% endfor %}"null": {}}
