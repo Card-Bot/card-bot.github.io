@@ -1,8 +1,9 @@
 ---
 ---
 {
+  "cards": [
   {% for entry in site.data %}{% assign data = entry[1] %}
-    "{{data.name}}": {
+    {
       "name": "{{data.name}}",
       "id": "{{ data.id }}",
       "description": "{{data.description}}",
@@ -14,4 +15,4 @@
       "image": "{{data.link}}",
       "single": "https://card-bot.github.io/api/cards/{{data.uname}}.json"
     },
-{% endfor %}"null": {}}
+{% endfor %}"null": {}]}
