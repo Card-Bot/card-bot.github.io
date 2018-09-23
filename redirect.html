@@ -6,10 +6,15 @@ permalink: /redirect
   <head>
     <script>
       var loc_url = window.location.href.split("?")[1].split("&")[0].split("=");
+      var bac_url = window.location.href.split("?")[1].split("&")[1].split("=");
       var url;
+      var backurl;
 
       if(loc_url[0] === "q") {
         url = loc_url[1];
+        if(bac_url[0] === "p") {
+          backurl = bac_url[1];
+        }
       }
 
       function redirect() {
@@ -19,10 +24,14 @@ permalink: /redirect
       function replace() {
         document.body.getElementById("url").innerHTML = "<p>" + url.toString() + "</p>";
       }
+      
+      function goback() {
+        window.location.href = backurl;
+      }
     </script>
   </head>
   <body onload="replace();">
     <p>WARNING: You are about to leave CardBot and enter an unmonitered website (<span id="url"></span>). Are you sure you want to be redirected?</p>
-    <button value="yes" onclick="redirect();">yes</button>
+    <button value="yes" onclick="redirect();">yes</button><button value="no" onclick="goback();">no</button>
   </body>
 </html>
